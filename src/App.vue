@@ -1,7 +1,7 @@
 <template>
   <div id="app">
-    <navbar></navbar>
-    <header-infos></header-infos>
+    <Navbar />
+    <HeaderInfos />
   </div>
 </template>
 <script>
