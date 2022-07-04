@@ -13,6 +13,7 @@
           justify-content-center
           flex-column
           p-4
+          float-sm-start
         "
       >
         <h1>Shpresa Zendeli</h1>
@@ -26,6 +27,7 @@
           align-items-center
           justify-content-center
           mh-100
+          ms-2
           text-center
         "
       >
