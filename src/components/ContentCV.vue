@@ -3,7 +3,7 @@
     <div class="row">
       <div class="col-8 me-2">
         <div>
-          <i class="fa fa-user" style="font-size: 20px" aria-hidden="true">
+          <i class="fa fa-user fa-2x"  aria-hidden="true">
             Profile</i
           >
           <p>
@@ -13,7 +13,7 @@
         </div>
         <br />
         <div>
-          <i class="fa fa-suitcase" style="font-size: 20px" aria-hidden="true">
+          <i class="fa fa-suitcase fa-2x"  aria-hidden="true">
             Employment History</i
           >
           <h3>Call center Operator at Ipsos, Skopje</h3>
@@ -27,8 +27,7 @@
         <br />
         <div>
           <i
-            class="fa fa-university"
-            style="font-size: 20px"
+            class="fa fa-university fa-2x"
             aria-hidden="true"
           >
             Education</i

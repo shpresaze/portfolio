@@ -3,6 +3,8 @@
     <Navbar />
     <HeaderInfos />
     <ContentCV />
+
+    <!--    <ContentCV />-->
   </div>
 </template>
 <script>
