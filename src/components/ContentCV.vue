@@ -1,113 +1,75 @@
 <template>
   <div class="container p-4">
     <div class="row">
-      <div class="col-8 me-2">
+      <div class="col-sm-12 col-md-8 col-lg-8 me-2">
         <div>
-          <i class="fa fa-user fa-2x"  aria-hidden="true">
-            Profile</i
-          >
-          <p>
-            I'm a girl who wants to bring out the best version of herself, and
-            works for it.
-          </p>
+          <SectionTitle iconClass="fa-user" title="Profile" />
+          <SectionDetails
+            description="I'm a girl who wants to bring out the best version of herself, and
+            works for it."
+          />
         </div>
-        <br />
         <div>
-          <i class="fa fa-suitcase fa-2x"  aria-hidden="true">
-            Employment History</i
-          >
-          <h3>Call center Operator at Ipsos, Skopje</h3>
-          <p>June 2019 - August 2019</p>
-          <p>
-            I worked on a call center company for surveys, where I was a
+          <SectionTitle iconClass="fa-suitcase" title="Employment History" />
+          <SectionDetails
+            title="Ipsos, Skopje"
+            subtitle="Call center Operator"
+            dates="June 2019 - August 2019"
+            description="I worked on a call center company for surveys, where I was a
             telephone operator and asked people questions from the survey
-            requested by a certain company.
-          </p>
+            requested by a certain company."
+          />
         </div>
-        <br />
         <div>
-          <i
-            class="fa fa-university fa-2x"
-            aria-hidden="true"
-          >
-            Education</i
-          >
-          <h3>Student, Ss. Cyril and Methodius University in Skopje</h3>
-          <h5>Faculty of Computer Science and Engineering</h5>
-          <p>Sep, 2016 - Apr, 2021</p>
-          <p>
-            During this period I was learning how to do things right. Most of
+          <SectionTitle iconClass="fa-university" title="Education" />
+          <SectionDetails
+            title="Ss. Cyril and Methodius University in Skopje"
+            subtitle="Student, Faculty of Computer Science and Engineering"
+            dates="September 2019 - Ongoing"
+            description="During this period I was learning how to do things right. Most of
             the time I was doing School Projects and listening to subjects that
-            gonna teach me skills I didn't know before.
-          </p>
+            gonna teach me skills I didn't know before."
+          />
+          <SectionDetails
+            title="Zef Lush Marku - High school"
+            subtitle="Graduated, Mathematics"
+            dates="September 2015 - June 2019"
+            description="During this period I was learning how to do things right. Most of
+            the time I was doing School Projects and listening to subjects that
+            gonna teach me skills I didn't know before."
+          />
         </div>
       </div>
-      <div class="col-3 ms-4 p-4 border border-success border-2">
+      <div
+        class="
+          col-sm-12 col-md-3 col-lg-3
+          ms-3
+          p-4
+          border border-success border-2
+        "
+      >
         <div>
           <h5>Details</h5>
-          <p><strong>address: </strong>GRCHEC, UL.5 BR.37</p>
-          <p>SKOPJE, 1000, MACEDONIA</p>
-          <p><strong>phone: </strong>+389 72 687 746</p>
-          <p><strong>E-mail: </strong>shpresaze1@gmail.com</p>
+          <DetailsInfo
+            title="address"
+            description="GRCHEC, UL. 5 BR. 37 SKOPJE, 1000, MACEDONIA"
+          />
+          <DetailsInfo title="phone" description="+389 72 687 746" />
+          <DetailsInfo title="E-mail" description="shpresaze1@gmail.com" />
         </div>
         <br />
         <div>
           <h5>Languages</h5>
-          <p><strong>Albanian(native): </strong></p>
-          <div class="progress">
-            <div
-              class="progress-bar bg-success"
-              role="progressbar"
-              style="width: 100%"
-              aria-valuenow="25"
-              aria-valuemin="0"
-              aria-valuemax="100"
-            ></div>
-          </div>
-          <p><strong>Italian: </strong></p>
-          <div class="progress">
-            <div
-              class="progress-bar bg-success"
-              role="progressbar"
-              style="width: 90%"
-              aria-valuenow="25"
-              aria-valuemin="0"
-              aria-valuemax="100"
-            ></div>
-          </div>
-          <p><strong>Macedonian: </strong></p>
-          <div class="progress">
-            <div
-              class="progress-bar bg-success"
-              role="progressbar"
-              style="width: 75%"
-              aria-valuenow="25"
-              aria-valuemin="0"
-              aria-valuemax="100"
-            ></div>
-          </div>
-          <p><strong>English: </strong></p>
-          <div class="progress">
-            <div
-              class="progress-bar bg-success"
-              role="progressbar"
-              style="width: 75%"
-              aria-valuenow="25"
-              aria-valuemin="0"
-              aria-valuemax="100"
-            ></div>
-          </div>
-          <p><strong>Turkish: </strong></p>
-          <div class="progress">
-            <div
-              class="progress-bar bg-success"
-              role="progressbar"
-              style="width: 90%"
-              aria-valuenow="25"
-              aria-valuemin="0"
-              aria-valuemax="100"
-            ></div>
-          </div>
+          <LanguageProgress title="Albanian(native)" progress="100" />
+          <LanguageProgress title="Italian" progress="95" />
+          <LanguageProgress title="Macedonian" progress="70" />
+          <LanguageProgress title="English" progress="70" />
+          <LanguageProgress title="Turkish" progress="80" />
+        </div>
+        <br />
+        <div>
+          <h5>Skills:</h5>
+          <p v-for="skill in skills" v-bind:key="skill">{{ skill }}</p>
         </div>
       </div>
     </div>
@@ -118,9 +80,32 @@
 </style>
 
 <script>
+import SectionDetails from "./SectionDetails.vue";
+import SectionTitle from "./SectionTitle.vue";
+import DetailsInfo from "./DetailsInfo.vue";
+import LanguageProgress from "./LanguageProgress.vue";
+
 export default {
+  components: {
+    LanguageProgress,
+    DetailsInfo,
+    SectionTitle,
+    DetailsInfo,
+    SectionDetails,
+  },
   data() {
-    return {};
+    return {
+      skills: [
+        "Multilanguage speaker",
+        "Microsoft office skills",
+        "HTML",
+        "CSS",
+        "Javascript",
+        "Bootstrap 5",
+        "C, C++",
+        "C#",
+      ],
+    };
   },
 };
 </script>

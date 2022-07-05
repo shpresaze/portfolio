@@ -1,12 +1,12 @@
 <template>
   <div class="container">
     <div class="row gap-2">
-      <div class="col-2">
+      <div class="col-sm-12 col-md-2 col-lg-2">
         <img src="../assets/images/photoCV.jpeg" class="img-fluid" />
       </div>
       <div
         class="
-          col-6
+          col-sm-7 col-md-6 col-lg-6
           border border-success border-2
           mh-100
           d-flex
@@ -21,13 +21,12 @@
       </div>
       <div
         class="
-          col-3
+          col-sm-3 col-md-3 col-lg-3
           border border-success border-2
           d-flex
           align-items-center
           justify-content-center
           mh-100
-          ms-2
           text-center
         "
       >
