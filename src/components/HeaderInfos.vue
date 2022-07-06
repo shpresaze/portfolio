@@ -2,7 +2,10 @@
   <div class="container">
     <div class="row gap-2">
       <div class="col-sm-12 col-md-2 col-lg-2">
-        <img src="../assets/images/photoCV.jpeg" class="img-fluid" />
+        <img
+          src="../assets/images/photoCV.jpeg"
+          class="img-fluid ratio ratio-5x3"
+        />
       </div>
       <div
         class="
