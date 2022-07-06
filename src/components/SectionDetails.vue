@@ -6,6 +6,7 @@
     <p>
       {{ description }}
     </p>
+    <hr />
     <br />
   </div>
 </template>

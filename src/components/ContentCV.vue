@@ -1,7 +1,7 @@
 <template>
-  <div class="container p-4">
-    <div class="row">
-      <div class="col-sm-12 col-md-8 col-lg-8 me-2">
+  <div class="container contentCV p-0">
+    <div class="row justify-content-between me-0">
+      <div class="col-sm-12 col-md-7 col-lg-7 p-5">
         <div>
           <SectionTitle iconClass="fa-user" title="Profile" />
           <SectionDetails
@@ -42,9 +42,9 @@
       </div>
       <div
         class="
-          col-sm-12 col-md-3 col-lg-3
-          ms-3
+          col-sm-12 col-md-4 col-lg-4
           p-4
+          ms-sm-0
           border border-success border-2
         "
       >
@@ -55,7 +55,11 @@
             description="GRCHEC, UL. 5 BR. 37 SKOPJE, 1000, MACEDONIA"
           />
           <DetailsInfo title="phone" description="+389 72 687 746" />
-          <DetailsInfo title="E-mail" description="shpresaze1@gmail.com" />
+          <DetailsInfo
+            title="E-mail"
+            description="shpresaze1@gmail.com"
+            class="text-break"
+          />
         </div>
         <br />
         <div>

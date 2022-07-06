@@ -2,5 +2,11 @@
 
 $fa-font-path: "~font-awesome/fonts";
 
-@import "~font-awesome/scss/font-awesome"
+@import "~font-awesome/scss/font-awesome";
 
+.ratio-5x3 {
+    --bs-aspect-ratio: calc(3 / 5 * 100%);
+  }
+.contentCV{
+   background-color: beige
+}

@@ -1,6 +1,6 @@
 <template>
-  <div class="container">
-    <div class="row gap-2">
+  <div class="container bg-success p-0 text-white">
+    <div class="row d-flex justify-content-between">
       <div class="col-sm-12 col-md-2 col-lg-2">
         <img
           src="../assets/images/photoCV.jpeg"
@@ -9,8 +9,7 @@
       </div>
       <div
         class="
-          col-sm-7 col-md-6 col-lg-6
-          border border-success border-2
+          col-sm-6 col-md-6 col-lg-6
           mh-100
           d-flex
           justify-content-center
@@ -25,7 +24,6 @@
       <div
         class="
           col-sm-3 col-md-3 col-lg-3
-          border border-success border-2
           d-flex
           align-items-center
           justify-content-center

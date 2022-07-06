@@ -3,6 +3,8 @@
     <i class="fa iconClass fa-2x" :class="iconClass" aria-hidden="true">
       {{ title }}</i
     >
+    <br />
+    <br />
   </div>
 </template>
 
