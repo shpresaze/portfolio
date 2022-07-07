@@ -103,6 +103,22 @@
             <p v-for="skill in skills" v-bind:key="skill">{{ skill }}</p>
           </div>
         </div>
+        <div>
+          <br />
+          <h5>Social Links:</h5>
+          <a href="https://www.facebook.com/shpresa.zendeli"
+            ><SectionTitle
+              iconClass="fa-facebook-square"
+              title="Facebook"
+              class="fa-5"
+          /></a>
+          <a href="https://www.instagram.com/shpresa.ze/"
+            ><SectionTitle iconClass="fa-instagram" title="Instagram"
+          /></a>
+          <a href="https://github.com/shpresaze"
+            ><SectionTitle iconClass="fa-github-square" title="GitHub"
+          /></a>
+        </div>
       </div>
     </div>
   </div>
