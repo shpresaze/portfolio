@@ -7,6 +7,19 @@ $fa-font-path: "~font-awesome/fonts";
 .ratio-5x3 {
     --bs-aspect-ratio: calc(3 / 5 * 100%);
   }
-.contentCV{
-   background-color: beige
+.contentBackground{
+    background-color: beige;
+  }
+.SectionDetailsBackground{
+   background-image: linear-gradient(90deg,#2c4837 2% , #43914c 100%,);
+}
+.headerBackground{
+  background-color: #63d471;
+  background-image: linear-gradient(300deg, #4c9f56 0%, #2c4837 31%);
+}
+.darkGreenBack{
+  background-color: #2c4837
+}
+.darkGreenText{
+  color: #2c4837
 }

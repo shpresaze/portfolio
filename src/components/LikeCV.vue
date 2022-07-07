@@ -7,7 +7,6 @@
       flex-column
       gap-1
       container
-      bg-success
     "
   >
     <div>

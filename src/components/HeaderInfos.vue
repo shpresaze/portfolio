@@ -1,9 +1,9 @@
 <template>
-  <div class="container bg-success p-0 text-white">
+  <div class="container headerBackground p-0 text-white">
     <div class="row d-flex justify-content-between">
       <div class="col-sm-12 col-md-2 col-lg-2">
         <img
-          src="../assets/images/photoCV.jpeg"
+          src="../assets/images/shpresa-image.jpeg"
           class="img-fluid ratio ratio-5x3"
         />
       </div>

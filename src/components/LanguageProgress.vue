@@ -5,7 +5,7 @@
     </p>
     <div class="progress">
       <div
-        class="progress-bar bg-success"
+        class="progress-bar headerBackground"
         role="progressbar"
         :style="styleObject"
         :aria-valuenow="progress"

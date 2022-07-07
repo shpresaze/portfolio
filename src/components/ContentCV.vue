@@ -1,5 +1,5 @@
 <template>
-  <div class="container contentCV p-0">
+  <div class="container p-0 contentBackground">
     <div class="row justify-content-between me-0">
       <div class="col-sm-12 col-md-7 col-lg-7 p-5">
         <div>
@@ -19,6 +19,12 @@
             telephone operator and asked people questions from the survey
             requested by a certain company."
           />
+          <SectionDetails
+            title="Zara, Grosseto-Italy"
+            subtitle="Sales Assistant"
+            dates="August 2019 - September 2019"
+            description="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+          />
         </div>
         <div>
           <SectionTitle iconClass="fa-university" title="Education" />
@@ -31,7 +37,7 @@
             gonna teach me skills I didn't know before."
           />
           <SectionDetails
-            title="Zef Lush Marku - High school"
+            title="Zef Lush Marku - High school in Skopje"
             subtitle="Graduated, Mathematics"
             dates="September 2015 - June 2019"
             description="During this period I was learning how to do things right. Most of
@@ -39,17 +45,21 @@
             gonna teach me skills I didn't know before."
           />
         </div>
+        <SectionDetails
+          title="Dituria - Elementary school in Grchec"
+          subtitle="Graduated"
+          dates="September 2010 - June 2015"
+        />
+        <SectionDetails
+          title="L'Istituto Comprensivo “G.Civinini” "
+          subtitle="Elementary school in Italy-Albinia"
+          dates="September 2005 - June 2010"
+        />
       </div>
-      <div
-        class="
-          col-sm-12 col-md-4 col-lg-4
-          p-4
-          ms-sm-0
-          border border-success border-2
-        "
-      >
+
+      <div class="col-sm-12 col-md-4 col-lg-4 p-4 ms-sm-0 border border-2">
         <div>
-          <button @click="toggleDetails" class="w-100 bg-success text-white">
+          <button @click="toggleDetails" class="w-100 darkGreenBack text-white">
             {{ detailsActive ? "Hide" : "Show" }} DETAILS
           </button>
           <div v-if="detailsActive">
@@ -68,7 +78,10 @@
         </div>
         <br />
         <div>
-          <button @click="toggleLanguages" class="w-100 bg-success text-white">
+          <button
+            @click="toggleLanguages"
+            class="w-100 text-white darkGreenBack"
+          >
             {{ languagesActive ? "Hide" : "Show" }} LANGUAGES
           </button>
           <div v-if="languagesActive">
@@ -82,7 +95,7 @@
         </div>
         <br />
         <div>
-          <button @click="toggleSkills" class="w-100 bg-success text-white">
+          <button @click="toggleSkills" class="w-100 text-white darkGreenBack">
             {{ skillsActive ? "Hide" : "Show" }} SKILLS
           </button>
           <div v-if="skillsActive">

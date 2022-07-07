@@ -1,7 +1,11 @@
 <template>
   <div>
-    <i class="fa iconClass fa-2x" :class="iconClass" aria-hidden="true">
-      {{ title }}</i
+    <i
+      class="fa iconClass fa-3x darkGreenText"
+      :class="iconClass"
+      aria-hidden="true"
+    >
+      <span class="text-dark"> {{ title }} </span></i
     >
     <br />
     <br />
