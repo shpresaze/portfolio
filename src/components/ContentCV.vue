@@ -49,31 +49,46 @@
         "
       >
         <div>
-          <h5>Details</h5>
-          <DetailsInfo
-            title="address"
-            description="GRCHEC, UL. 5 BR. 37 SKOPJE, 1000, MACEDONIA"
-          />
-          <DetailsInfo title="phone" description="+389 72 687 746" />
-          <DetailsInfo
-            title="E-mail"
-            description="shpresaze1@gmail.com"
-            class="text-break"
-          />
+          <button @click="toggleDetails" class="w-100 bg-success text-white">
+            {{ detailsActive ? "Hide" : "Show" }} DETAILS
+          </button>
+          <div v-if="detailsActive">
+            <h5>Details</h5>
+            <DetailsInfo
+              title="address"
+              description="GRCHEC, UL. 5 BR. 37 SKOPJE, 1000, MACEDONIA"
+            />
+            <DetailsInfo title="phone" description="+389 72 687 746" />
+            <DetailsInfo
+              title="E-mail"
+              description="shpresaze1@gmail.com"
+              class="text-break"
+            />
+          </div>
         </div>
         <br />
         <div>
-          <h5>Languages</h5>
-          <LanguageProgress title="Albanian(native)" progress="100" />
-          <LanguageProgress title="Italian" progress="95" />
-          <LanguageProgress title="Macedonian" progress="70" />
-          <LanguageProgress title="English" progress="70" />
-          <LanguageProgress title="Turkish" progress="80" />
+          <button @click="toggleLanguages" class="w-100 bg-success text-white">
+            {{ languagesActive ? "Hide" : "Show" }} LANGUAGES
+          </button>
+          <div v-if="languagesActive">
+            <h5>Languages</h5>
+            <LanguageProgress title="Albanian(native)" progress="100" />
+            <LanguageProgress title="Italian" progress="95" />
+            <LanguageProgress title="Macedonian" progress="70" />
+            <LanguageProgress title="English" progress="70" />
+            <LanguageProgress title="Turkish" progress="80" />
+          </div>
         </div>
         <br />
         <div>
-          <h5>Skills:</h5>
-          <p v-for="skill in skills" v-bind:key="skill">{{ skill }}</p>
+          <button @click="toggleSkills" class="w-100 bg-success text-white">
+            {{ skillsActive ? "Hide" : "Show" }} SKILLS
+          </button>
+          <div v-if="skillsActive">
+            <h5>Skills:</h5>
+            <p v-for="skill in skills" v-bind:key="skill">{{ skill }}</p>
+          </div>
         </div>
       </div>
     </div>
@@ -109,7 +124,21 @@ export default {
         "C, C++",
         "C#",
       ],
+      detailsActive: false,
+      languagesActive: false,
+      skillsActive: false,
     };
+  },
+  methods: {
+    toggleDetails() {
+      this.detailsActive = !this.detailsActive;
+    },
+    toggleLanguages() {
+      this.languagesActive = !this.languagesActive;
+    },
+    toggleSkills() {
+      this.skillsActive = !this.skillsActive;
+    },
   },
 };
 </script>

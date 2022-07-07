@@ -9,7 +9,7 @@
       </div>
       <div
         class="
-          col-sm-6 col-md-6 col-lg-6
+          col-sm-12 col-md-5 col-lg-5
           mh-100
           d-flex
           justify-content-center
@@ -23,15 +23,19 @@
       </div>
       <div
         class="
-          col-sm-3 col-md-3 col-lg-3
+          col-sm-12 col-md-4 col-lg-4
           d-flex
           align-items-center
           justify-content-center
           mh-100
+          pt-5
           text-center
+          flex-column
         "
       >
         <h1>CV</h1>
+        <br />
+        <LikeCV />
       </div>
     </div>
   </div>
@@ -41,7 +45,11 @@
 </style>
 
 <script>
+import LikeCV from "../components/LikeCV.vue";
 export default {
+  components: {
+    LikeCV,
+  },
   data() {
     return {};
   },
