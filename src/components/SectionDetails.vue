@@ -28,7 +28,7 @@ export default {
     },
     description: {
       type: String,
-      required: true,
+      required: false,
     },
   },
 };

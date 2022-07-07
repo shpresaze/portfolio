@@ -137,9 +137,9 @@ export default {
         "C, C++",
         "C#",
       ],
-      detailsActive: false,
-      languagesActive: false,
-      skillsActive: false,
+      detailsActive: true,
+      languagesActive: true,
+      skillsActive: true,
     };
   },
   methods: {
