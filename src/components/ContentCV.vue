@@ -37,7 +37,7 @@
       </div>
 
       <div class="col-sm-12 col-md-4 col-lg-4 p-4 ms-sm-0 border border-2">
-        <AsaidBarInfo />
+        <AsidebarInfo />
       </div>
     </div>
   </div>
@@ -49,7 +49,7 @@
 <script>
 import DetailsInfo from "./DetailsInfo.vue";
 import SectionTitle from "./SectionTitle.vue";
-import AsaidBarInfo from "./AsaidBarInfo.vue";
+import AsidebarInfo from "./AsidebarInfo.vue";
 import SectionDetails from "./SectionDetails.vue";
 import LanguageProgress from "./LanguageProgress.vue";
 
@@ -57,7 +57,7 @@ export default {
   components: {
     DetailsInfo,
     SectionTitle,
-    AsaidBarInfo,
+    AsidebarInfo,
     SectionDetails,
     LanguageProgress,
   },
