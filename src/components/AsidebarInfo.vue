@@ -60,7 +60,7 @@
     </div>
     <button
       @click="toggleHobies"
-      class="w-100 text-white darkGreenBack my-3 badge rounded-pill fs-5"
+      class="w-100 text-white darkGreenBack my-5 badge rounded-pill fs-5"
     >
       {{ hobiesActive ? "Hide" : "Show" }} HOBBIES
     </button>

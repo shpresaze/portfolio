@@ -1,7 +1,7 @@
 <template>
   <div class="container headerBackground p-0 text-white">
     <div class="row d-flex justify-content-between">
-      <div class="col-sm-12 col-md-2 col-lg-2">
+      <div class="col-sm-12 col-md-4 col-lg-2">
         <img
           src="../assets/images/shpresa-image.jpeg"
           class="img-fluid ratio ratio-5x3"
@@ -9,7 +9,7 @@
       </div>
       <div
         class="
-          col-sm-12 col-md-5 col-lg-5
+          col-sm-12 col-md-4 col-lg-5
           mh-100
           d-flex
           justify-content-center

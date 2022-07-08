@@ -49,9 +49,10 @@
 <script>
 import DetailsInfo from "./DetailsInfo.vue";
 import SectionTitle from "./SectionTitle.vue";
-import AsidebarInfo from "./AsidebarInfo.vue";
+
 import SectionDetails from "./SectionDetails.vue";
 import LanguageProgress from "./LanguageProgress.vue";
+import AsidebarInfo from "./AsidebarInfo.vue";
 
 export default {
   components: {
