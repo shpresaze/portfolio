@@ -7,7 +7,7 @@
         aria-hidden="true"
       ></i>
       <span class="text-dark"
-        ><strong class="darkGreenText"> {{ title }} : </strong>
+        ><strong class="dark-green-text"> {{ title }} : </strong>
         {{ description }}
       </span>
     </p>

@@ -5,7 +5,7 @@
       :class="iconClass"
       aria-hidden="true"
     >
-      <span class="darkGreenText"> {{ title }} </span></i
+      <span class="dark-green-text"> {{ title }} </span></i
     >
     <br />
     <br />
@@ -17,7 +17,7 @@ export default {
   props: {
     title: {
       type: String,
-      required: false,
+      required: true,
     },
     iconClass: {
       type: String,

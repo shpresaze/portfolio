@@ -3,18 +3,15 @@
     <div class="row justify-content-between me-0">
       <div class="col-sm-12 col-md-7 col-lg-7 p-5">
         <div>
-          <SectionTitle iconClass="fa-user d-inline" title="Profile" />
-          <!-- <button class="border border-0 d-inline">
-            <i class="fa fa-chevron-circle-down" aria-hidden="true"></i>
-          </button> -->
-          <SectionDetails
+          <section-title iconClass="fa-user d-inline" title="Profile" />
+          <section-details
             description="I'm a girl who wants to bring out the best version of herself, and
             works for it."
           />
         </div>
         <div>
-          <SectionTitle iconClass="fa-suitcase" title="Employment History" />
-          <SectionDetails
+          <section-title iconClass="fa-suitcase" title="Employment History" />
+          <section-details
             v-for="obj in employmentHistory"
             :key="obj.title"
             :title="obj.title"
@@ -24,8 +21,8 @@
           />
         </div>
         <div>
-          <SectionTitle iconClass="fa-university" title="Education" />
-          <SectionDetails
+          <section-title iconClass="fa-university" title="Education" />
+          <section-details
             v-for="obj in educationHistory"
             :key="obj.title"
             :title="obj.title"

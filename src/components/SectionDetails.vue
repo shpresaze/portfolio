@@ -6,7 +6,7 @@
     <p>
       {{ description }}
     </p>
-    <hr class="darkGreenBack" />
+    <hr class="dark-green-back" />
     <br />
   </div>
 </template>

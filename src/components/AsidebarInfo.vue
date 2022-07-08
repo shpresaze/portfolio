@@ -3,24 +3,24 @@
     <div>
       <button
         @click="toggleDetails"
-        class="w-100 darkGreenBack text-white my-3 badge rounded-pill fs-5"
+        class="w-100 dark-green-back text-white my-3 badge rounded-pill fs-5"
       >
         {{ detailsActive ? "Hide" : "Show" }} DETAILS
       </button>
       <div v-if="detailsActive">
         <h2>Details</h2>
-        <DetailsInfo
+        <details-info
           iconClass="fa-phone-square"
           title="phone"
           description="+389 72 687 746"
         />
-        <DetailsInfo
+        <details-info
           iconClass="fa-envelope"
           title="E-mail"
           description="shpresaze1@gmail.com"
           class="text-break"
         />
-        <DetailsInfo
+        <details-info
           iconClass="fa-home"
           title="address"
           description="GRCHEC, UL. 5 BR. 37 SKOPJE, 1000, MACEDONIA"
@@ -32,17 +32,17 @@
     <div>
       <button
         @click="toggleLanguages"
-        class="w-100 text-white darkGreenBack my-3 badge rounded-pill fs-5"
+        class="w-100 text-white dark-green-back my-3 badge rounded-pill fs-5"
       >
         {{ languagesActive ? "Hide" : "Show" }} LANGUAGES
       </button>
       <div v-if="languagesActive">
         <h2>Languages</h2>
-        <LanguageProgress title="Albanian(native)" progress="100" />
-        <LanguageProgress title="Macedonian" progress="70" />
-        <LanguageProgress title="Italian" progress="95" />
-        <LanguageProgress title="Turkish" progress="80" />
-        <LanguageProgress title="English" progress="70" />
+        <language-progress title="Albanian(native)" progress="100" />
+        <language-progress title="Macedonian" progress="70" />
+        <language-progress title="Italian" progress="95" />
+        <language-progress title="Turkish" progress="80" />
+        <language-progress title="English" progress="70" />
       </div>
     </div>
     <br />
@@ -50,7 +50,7 @@
     <div>
       <button
         @click="toggleSkills"
-        class="w-100 text-white darkGreenBack my-3 badge rounded-pill fs-5"
+        class="w-100 text-white dark-green-back my-3 badge rounded-pill fs-5"
       >
         {{ skillsActive ? "Hide" : "Show" }} SKILLS
       </button>
@@ -71,7 +71,7 @@
 
     <button
       @click="toggleHobies"
-      class="w-100 text-white darkGreenBack my-5 badge rounded-pill fs-5"
+      class="w-100 text-white dark-green-back my-5 badge rounded-pill fs-5"
     >
       {{ hobiesActive ? "Hide" : "Show" }} HOBBIES
     </button>
@@ -94,7 +94,7 @@
         class="
           d-flex
           justify-content-evenly
-          darkGreenBack
+          dark-green-back
           badge
           rounded-pill
           w-100

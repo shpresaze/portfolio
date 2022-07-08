@@ -1,5 +1,5 @@
 <template>
-  <div class="container headerBackground p-0 text-white">
+  <div class="container header-background p-0 text-white">
     <div class="row d-flex justify-content-between">
       <div class="col-sm-12 col-md-4 col-lg-2">
         <img

@@ -10,7 +10,7 @@
     "
   >
     <div>
-      <button @click="++likes" class="badge rounded-pill darkGreenText me-1">
+      <button @click="++likes" class="badge rounded-pill dark-green-text me-1">
         <i class="fa fa-thumbs-up fa-3x" aria-hidden="true"></i>
       </button>
 
@@ -36,11 +36,7 @@ export default {
       dislikes: 0,
     };
   },
-  methods: {
-    clickedLike() {
-      this.likes++;
-    },
-  },
+
   computed: {
     likesPercentage() {
       if (this.likes + this.dislikes === 0) return 0;
