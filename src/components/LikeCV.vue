@@ -18,10 +18,12 @@
         <i class="fa fa-thumbs-down fa-3x" aria-hidden="true"></i>
       </button>
     </div>
-    <p class="d-flex align-items-center text-break">
-      <strong class="pe-1">Liked</strong> {{ likesPercentage.toFixed(2) }}% -
-      {{ dislikePercentage.toFixed(2) }}%
-      <strong class="ps-1">Disliked</strong>
+    <p class="d-flex align-items-center">
+      <strong class="pe-1"> Liked {{ likesPercentage.toFixed(2) }}% /</strong>
+
+      <strong class="ps-1">
+        Disliked {{ dislikePercentage.toFixed(2) }}%
+      </strong>
     </p>
   </div>
 </template>

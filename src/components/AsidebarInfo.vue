@@ -148,11 +148,11 @@ export default {
         },
         {
           nameSkill: "Microsoft office skills",
-          knowledge: 4,
+          knowledge: 5,
         },
         {
           nameSkill: "HTML",
-          knowledge: 4,
+          knowledge: 5,
         },
         {
           nameSkill: "CSS",
@@ -168,6 +168,10 @@ export default {
         },
         {
           nameSkill: "C, C++, C#",
+          knowledge: 3,
+        },
+        {
+          nameSkill: "Java",
           knowledge: 3,
         },
       ],
