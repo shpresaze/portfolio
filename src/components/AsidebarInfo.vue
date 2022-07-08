@@ -10,11 +10,6 @@
       <div v-if="detailsActive">
         <h2>Details</h2>
         <DetailsInfo
-          iconClass="fa-home"
-          title="address"
-          description="GRCHEC, UL. 5 BR. 37 SKOPJE, 1000, MACEDONIA"
-        />
-        <DetailsInfo
           iconClass="fa-phone-square"
           title="phone"
           description="+389 72 687 746"
@@ -25,9 +20,15 @@
           description="shpresaze1@gmail.com"
           class="text-break"
         />
+        <DetailsInfo
+          iconClass="fa-home"
+          title="address"
+          description="GRCHEC, UL. 5 BR. 37 SKOPJE, 1000, MACEDONIA"
+        />
       </div>
     </div>
     <br />
+
     <div>
       <button
         @click="toggleLanguages"
@@ -55,9 +56,19 @@
       </button>
       <div v-if="skillsActive">
         <h2>Skills:</h2>
-        <p v-for="skill in skills" v-bind:key="skill">{{ skill }}</p>
+        <div v-for="skill in skills" v-bind:key="skill" class="row">
+          <span class="col-6">
+            {{ skill.nameSkill }}
+          </span>
+          <div class="col-6">
+            <span v-for="circle in skill.knowledge" :key="circle">
+              <i class="fa fa-circle green-text" aria-hidden="true"></i>
+            </span>
+          </div>
+        </div>
       </div>
     </div>
+
     <button
       @click="toggleHobies"
       class="w-100 text-white darkGreenBack my-5 badge rounded-pill fs-5"
@@ -76,8 +87,8 @@
         ></i>
       </div>
     </div>
+    <br />
 
-    <br class="mt-0 pt-0" />
     <div>
       <div
         class="
@@ -131,14 +142,34 @@ export default {
       skillsActive: true,
       hobiesActive: true,
       skills: [
-        "Multilanguage speaker",
-        "Microsoft office skills",
-        "HTML",
-        "CSS",
-        "Javascript",
-        "Bootstrap 5",
-        "C, C++",
-        "C#",
+        {
+          nameSkill: "Multilanguage speaker",
+          knowledge: 5,
+        },
+        {
+          nameSkill: "Microsoft office skills",
+          knowledge: 4,
+        },
+        {
+          nameSkill: "HTML",
+          knowledge: 4,
+        },
+        {
+          nameSkill: "CSS",
+          knowledge: 4,
+        },
+        {
+          nameSkill: "Javascript",
+          knowledge: 4,
+        },
+        {
+          nameSkill: "Bootstrap 5",
+          knowledge: 4,
+        },
+        {
+          nameSkill: "C, C++, C#",
+          knowledge: 3,
+        },
       ],
       iconsHobbie: ["fa-plane", "fa-video-camera", "fa-music", "fa-bicycle"],
     };
