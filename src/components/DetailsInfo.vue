@@ -1,7 +1,15 @@
 <template>
   <div>
     <p>
-      <strong>{{ title }} : </strong>{{ description }}
+      <i
+        class="fa iconClass green-text fa-2x"
+        :class="iconClass"
+        aria-hidden="true"
+      ></i>
+      <span class="text-dark"
+        ><strong class="darkGreenText"> {{ title }} : </strong>
+        {{ description }}
+      </span>
     </p>
   </div>
 </template>
@@ -9,6 +17,10 @@
 <script>
 export default {
   props: {
+    iconClass: {
+      type: String,
+      required: true,
+    },
     title: {
       type: String,
       required: true,

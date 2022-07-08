@@ -1,11 +1,11 @@
 <template>
   <div>
     <i
-      class="fa iconClass fa-3x darkGreenText"
+      class="fa iconClass fa-3x green-text"
       :class="iconClass"
       aria-hidden="true"
     >
-      <span class="text-dark"> {{ title }} </span></i
+      <span class="darkGreenText"> {{ title }} </span></i
     >
     <br />
     <br />
@@ -17,7 +17,7 @@ export default {
   props: {
     title: {
       type: String,
-      required: true,
+      required: false,
     },
     iconClass: {
       type: String,

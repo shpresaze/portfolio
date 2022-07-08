@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="contentBackground">
     <HeaderInfos />
     <ContentCV />
   </div>

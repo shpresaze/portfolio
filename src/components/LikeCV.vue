@@ -10,12 +10,12 @@
     "
   >
     <div>
-      <button @click="++likes">
-        <i class="fa fa-thumbs-up" aria-hidden="true">Like CV</i>
+      <button @click="++likes" class="badge rounded-pill darkGreenText me-1">
+        <i class="fa fa-thumbs-up fa-3x" aria-hidden="true"></i>
       </button>
 
-      <button @click="++dislikes">
-        <i class="fa fa-thumbs-down" aria-hidden="true">Dislike CV</i>
+      <button @click="++dislikes" class="badge rounded-pill text-secondary">
+        <i class="fa fa-thumbs-down fa-3x" aria-hidden="true"></i>
       </button>
     </div>
     <p class="d-flex align-items-center text-break">
