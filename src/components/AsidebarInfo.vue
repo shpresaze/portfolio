@@ -99,23 +99,30 @@
           rounded-pill
           w-100
           py-3
+          m-0
+          row
         "
       >
-        <a href="https://www.facebook.com/shpresa.zendeli"
+        <a href="https://www.facebook.com/shpresa.zendeli " class="col-3"
           ><i
-            class="fa fa-facebook-square fa-3x text-white me-5"
+            class="fa fa-facebook-square fa-3x text-white"
             aria-hidden="true"
           ></i
         ></a>
-        <a href="https://www.instagram.com/shpresa.ze/">
-          <i
-            class="fa fa-instagram fa-3x text-white me-5"
-            aria-hidden="true"
-          ></i>
+        <a href="https://www.instagram.com/shpresa.ze/" class="col-3">
+          <i class="fa fa-instagram fa-3x text-white" aria-hidden="true"></i>
         </a>
-        <a href="https://github.com/shpresaze"
+        <a href="https://github.com/shpresaze" class="col-3"
           ><i
             class="fa fa-github-square fa-3x text-white"
+            aria-hidden="true"
+          ></i
+        ></a>
+        <a
+          href="https://www.linkedin.com/in/shpresa-zendeli-414a37244/"
+          class="col-3"
+          ><i
+            class="fa fa-linkedin-square fa-3x text-white"
             aria-hidden="true"
           ></i
         ></a>
